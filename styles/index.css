@@ -43,11 +43,34 @@ a:hover {
 }
 
 .main {
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: calc(80vh - 50px);
+    /* Altezza già impostata, mantiene coerenza */
+    text-align: center;
+    /* Centra anche il contenuto testuale */
+}
 
+.download-cv {
+    width: 15%;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    animation: fadeIn 3s;
+    border: solid 1px rgb(0, 0, 0, 0.54);
+}
+
+.download-cv a {
+    text-decoration: none;
+    color: black;
+}
+
+.download-cv:hover {
+    transition: 1s;
+    -webkit-box-shadow: 1px 5px 16px -3px rgb(0, 0, 0, 0.54);
+    box-shadow: 1px 5px 16px -3px rgb(0, 0, 0, 0.54);
 }
 
 @keyframes fadeIn {
@@ -73,8 +96,9 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 15%;
+    margin-top: 10%;
     animation: fadeIn 2s;
+    text-align: left;
 }
 
 
